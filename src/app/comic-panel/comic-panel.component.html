@@ -1,0 +1,53 @@
+<div class="d-none">
+    <canvas #canvas>
+
+    </canvas>
+  </div>
+  
+
+  <div class="d-none">
+    <button (click)="onBackArrowClick()">Back</button>
+    <button (click)="onNextArrowClick()">Next</button>
+    
+  </div>
+
+
+<div>
+    <canvas #canvasOutput></canvas>
+  </div>
+
+
+
+<!-- <div *ngFor="let panel of panels">
+    
+    <div style="border: 2px solid red; margin: 5px;">
+      <img [src]="imagePath" [style.width.px]="panel.width" [style.height.px]="panel.height"
+           [style.object-position.px]="panel.width + ' ' + panel.height" alt="Panel">
+    </div> -->
+
+<!-- 
+    <div  *ngFor="let panel of panels">
+        
+        <div class="image-container" [style.width.px]="-panel.width" 
+        [style.height.px]="-panel.height" >
+        <img [src]="imagePath" 
+        [style.top.px]="-panel.x" 
+        [style.left.px]="-panel.y" 
+        
+        alt="Your Image">
+        </div>
+      </div>
+       -->
+
+       <div class="d-none" *ngFor="let panel of panels">
+        <div class="image-container" 
+        [style.width.px]="panel.width"
+        [style.height.px]="panel.height"  >
+            <img [src]="imagePath" 
+            [style.top.px]="-panel.y" 
+            [style.left.px]="-panel.x" 
+            alt="Your Image">
+            </div>
+       </div>
+       
+       

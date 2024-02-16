@@ -1,0 +1,19 @@
+.image-container {
+    // width: 400px; /* Adjust this value according to your desired width */
+    // height: 500px; /* Adjust this value according to your desired height */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-container img {
+    position: absolute;
+    // top: -50px; /* Adjust this value to set the y-coordinate of the cropped region */
+    // left: -50px; /* Adjust this value to set the x-coordinate of the cropped region */
+    // width: 300px; /* Adjust this value according to your desired width + x */
+    // height: 200px; /* Adjust this value according to your desired height + y */
+  }
+
+  .d-none{
+    visibility:hidden;
+    height: 0px;
+  }

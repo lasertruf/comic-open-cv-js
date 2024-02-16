@@ -1,0 +1,12 @@
+
+<div>
+    {{objects.length ? objects[objects.length-1].x : ''}}
+  </div>
+  
+<div class="container" (click)="createObject($event)">
+    <div *ngFor="let object of objects; let i = index" class="object"
+         [style.left.px]="object.x - 20" [style.top.px]="object.y - 15"
+         [class.exploded]="object.exploded" (click)="explodeObject(i)">
+    </div>
+  </div>
+  

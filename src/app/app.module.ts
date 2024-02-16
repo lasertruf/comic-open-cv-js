@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ExplosionComponent } from './explosion/explosion.component';
+import { ComicPanelComponent } from './comic-panel/comic-panel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExplosionComponent,
+    ComicPanelComponent
   ],
   imports: [
     BrowserModule,
