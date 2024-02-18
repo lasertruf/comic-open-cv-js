@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExplosionComponent } from './explosion/explosion.component';
 import { ComicPanelComponent } from './comic-panel/comic-panel.component';
+import { FaceDetectionComponent } from './face-detection/face-detection.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExplosionComponent,
-    ComicPanelComponent
+    ComicPanelComponent,
+    FaceDetectionComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
